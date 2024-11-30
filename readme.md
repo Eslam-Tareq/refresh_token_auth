@@ -44,6 +44,7 @@ Follow these steps to set up the project locally:
 
 1. **Clone the Repository**  
     Use the following command to clone this repository:
+
    ```bash
    git clone https://github.com/Eslam-Tareq/refresh_token_auth.git
    cd refresh_token_auth
@@ -51,31 +52,24 @@ Follow these steps to set up the project locally:
    Run the following command to install the required packages:
    ```
 
-Install Dependencies
-Run the following command to install the required packages:
+2. **Install Dependencies**
+   Run the following command to install the required packages:
 
-bash
-Copy code
-npm install
-Set Environment Variables
-Create a .env file in the root directory and configure the required variables:
+   ```bash
+   npm install
+   ```
 
-env
-Copy code
-PORT=3000
-JWT_SECRET=your_jwt_secret
-REFRESH_TOKEN_SECRET=your_refresh_token_secret
-TOKEN_EXPIRY=3600 # Expiration time for access tokens (in seconds)
-REFRESH_TOKEN_EXPIRY=86400 # Expiration time for refresh tokens (in seconds)
-Start the Application
-Start the application with the following command:
-
-bash
-Copy code
-npm start
-Run Tests (Optional)
-If tests are included, run them using:
-
-bash
-Copy code
-npm test
+3. **Set Environment Variables**
+   Create a .env file in the root directory and configure the required variables:
+   ```env
+   PORT=3000
+   JWT_SECRET=your_jwt_secret
+   REFRESH_TOKEN_SECRET=your_refresh_token_secret
+   TOKEN_EXPIRY=3600 # Expiration time for access tokens (in seconds)
+   REFRESH_TOKEN_EXPIRY=86400 # Expiration time for refresh tokens (in seconds)
+   ```
+4. **Start the Application**
+   Start the application with the following command:
+   ```bash
+   npm run dev
+   ```
